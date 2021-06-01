@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sj2" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-28-SIH" customClass="AlignmentImageView" customModule="Workout" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="259" width="414" height="637"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a personalised workout plan " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8Z-X1-FsK">
+                                <rect key="frame" x="30" y="64" width="354" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join a plan to reach your goals faster and create happy habits" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DA-OB-3hr">
+                                <rect key="frame" x="30" y="151" width="354" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s do it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ0-IL-Znw">
+                                <rect key="frame" x="30" y="230" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3c0-Sz-A23"/>
+                        <color key="backgroundColor" red="0.60392156862745094" green="0.8666666666666667" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eJ0-IL-Znw" firstAttribute="top" secondItem="6DA-OB-3hr" secondAttribute="bottom" constant="38" id="3Q8-WI-pLi"/>
+                            <constraint firstItem="BeN-28-SIH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="260" id="8Ai-29-MJa"/>
+                            <constraint firstItem="U8Z-X1-FsK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="CbJ-MZ-lLF"/>
+                            <constraint firstItem="BeN-28-SIH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I2P-Zo-hgg"/>
+                            <constraint firstItem="U8Z-X1-FsK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="JP0-FO-PbA"/>
+                            <constraint firstItem="eJ0-IL-Znw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="W93-xz-QTT"/>
+                            <constraint firstItem="6DA-OB-3hr" firstAttribute="top" secondItem="U8Z-X1-FsK" secondAttribute="bottom" constant="15" id="Whc-hK-SgC"/>
+                            <constraint firstAttribute="trailing" secondItem="U8Z-X1-FsK" secondAttribute="trailing" constant="30" id="XnR-8X-6kl"/>
+                            <constraint firstItem="6DA-OB-3hr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="cMk-Po-Qmq"/>
+                            <constraint firstAttribute="bottom" secondItem="BeN-28-SIH" secondAttribute="bottom" id="f68-78-ZSK"/>
+                            <constraint firstAttribute="trailing" secondItem="BeN-28-SIH" secondAttribute="trailing" id="yV6-dE-YxV"/>
+                            <constraint firstAttribute="trailing" secondItem="6DA-OB-3hr" secondAttribute="trailing" constant="30" id="ywp-L0-gzJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverImage" destination="BeN-28-SIH" id="gX6-Yd-zSf"/>
+                        <segue destination="Ujt-Zl-KI2" kind="show" identifier="launchWebview" id="36S-s3-wCB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="8Ia-bc-bBR">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ujt-Zl-KI2" customClass="WebViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cF3-VY-C9a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hP4-Yp-uxo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iAN-Eq-FGp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hP4-Yp-uxo" firstAttribute="leading" secondItem="iAN-Eq-FGp" secondAttribute="leading" id="Jz8-WN-dXd"/>
+                            <constraint firstItem="hP4-Yp-uxo" firstAttribute="trailing" secondItem="iAN-Eq-FGp" secondAttribute="trailing" id="Z6U-XI-ANM"/>
+                            <constraint firstAttribute="bottom" secondItem="hP4-Yp-uxo" secondAttribute="bottom" id="jVh-Dg-9b3"/>
+                            <constraint firstItem="hP4-Yp-uxo" firstAttribute="top" secondItem="iAN-Eq-FGp" secondAttribute="top" id="v5E-Hw-ZcM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9XD-f0-ARc"/>
+                    <connections>
+                        <outlet property="wv" destination="hP4-Yp-uxo" id="LDJ-Ez-uOS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bk-Ah-mR7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="139.95535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sj2" width="1652" height="2416"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
